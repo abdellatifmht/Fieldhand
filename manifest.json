@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Fieldhand",
+  "description": "__MSG_extensionDescription__",
+  "version": "1.0.0",
+  "minimum_chrome_version": "120",
+  "default_locale": "en",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Fieldhand",
+    "default_icon": { "16": "icons/16.png", "32": "icons/32.png" }
+  },
+  "options_ui": { "page": "options.html", "open_in_tab": true },
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "commands": {
+    "fill-form": {
+      "suggested_key": { "default": "Alt+Shift+F" },
+      "description": "__MSG_fillCommand__"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "appName": { "message": "Fieldhand" },
+  "extensionDescription": {
+    "message": "Fill forms with your saved profiles. Local, private, and always on your say-so."
+  },
+  "fillCommand": { "message": "Fill the current form with Fieldhand" },
+  "localOnly": { "message": "Local only" },
+  "oneLessTask": { "message": "One less repetitive task" },
+  "popupHeading": { "message": "Your details. One click." },
+  "popupIntro": {
+    "message": "Fill the form in front of you with a saved profile. You stay in control."
+  },
+  "useProfile": { "message": "Use profile" },
+  "emptyProfile": {
+    "message": "This profile is empty. Add your details in Manage profiles."
+  },
+  "confirmHttp": {
+    "message": "This page uses HTTP. I understand my details may travel over an unencrypted connection."
+  },
+  "fillForm": { "message": "Fill this form" },
+  "undo": { "message": "Undo" },
+  "ready": { "message": "Ready when you are" },
+  "framesSkipped": {
+    "message": "Some embedded forms could not be accessed. Fill them manually."
+  },
+  "keyboardHint": { "message": "to fill faster" },
+  "staysLocal": { "message": "Your data stays on this device." },
+  "manageProfiles": { "message": "Manage profiles →" },
+  "filledCount": { "message": "$1 fields filled" },
+  "restoredCount": { "message": "$1 controls restored" },
+  "unsupportedPage": {
+    "message": "Open a regular website to fill a form. Browser and store pages are protected."
+  },
+  "insecurePage": {
+    "message": "Confirm the HTTP warning before filling this page."
+  },
+  "operationFailed": {
+    "message": "Could not complete this action. Check page access, reload, and try again."
+  },
+  "invalidSchema": {
+    "message": "Invalid profile data. Check names, dates, domains, and limits (100 profiles / 100 rules)."
+  },
+  "fileTooLarge": { "message": "Choose a JSON file smaller than 2 MB." },
+  "lastProfile": { "message": "Keep at least one profile." },
+  "optionsTitle": { "message": "Profiles & preferences · Fieldhand" },
+  "yourDetailsYourDevice": {
+    "message": "Your details. Your device. Your choice."
+  },
+  "workspace": { "message": "Your personal workspace" },
+  "optionsHeading": { "message": "A little setup. A lot less typing." },
+  "optionsIntro": {
+    "message": "Keep a profile for every part of your life. Choose one whenever you need it."
+  },
+  "profiles": { "message": "Your profiles" },
+  "newProfile": { "message": "+ New profile" },
+  "newProfileName": { "message": "New profile" },
+  "personalProfile": { "message": "Personal" },
+  "privateByDesign": { "message": "Private by design" },
+  "privacyNote": {
+    "message": "Profiles are stored locally and are not encrypted. Never save passwords, payment details, or other secrets. Filling shares your chosen details with the website, which may send them to its servers."
+  },
+  "profileDetails": { "message": "Make it yours" },
+  "defaultProfile": { "message": "Default" },
+  "profileName": { "message": "Profile name" },
+  "domains": { "message": "Preferred websites" },
+  "domainsHint": {
+    "message": "Optional domains, separated by commas. Example: linkedin.com"
+  },
+  "makeDefault": { "message": "Set as default" },
+  "duplicate": { "message": "Duplicate" },
+  "deleteProfile": { "message": "Delete" },
+  "personalDetails": { "message": "Personal details" },
+  "addressDetails": { "message": "Address" },
+  "workDetails": { "message": "Work & online" },
+  "honorific": { "message": "Title / salutation" },
+  "firstName": { "message": "First name" },
+  "lastName": { "message": "Last name" },
+  "birthDate": { "message": "Date of birth" },
+  "email": { "message": "Email address" },
+  "phone": { "message": "Phone number" },
+  "address1": { "message": "Address line 1" },
+  "address2": { "message": "Address line 2" },
+  "postalCode": { "message": "Postal code" },
+  "city": { "message": "City" },
+  "region": { "message": "State / region" },
+  "country": { "message": "Country (name or ISO code)" },
+  "company": { "message": "Company" },
+  "jobTitle": { "message": "Job title" },
+  "website": { "message": "Website" },
+  "linkedin": { "message": "LinkedIn" },
+  "customRules": { "message": "Custom fields" },
+  "customRulesHint": {
+    "message": "Your rules take priority. Sensitive fields are always excluded."
+  },
+  "addRule": { "message": "+ Add field" },
+  "keywords": { "message": "Keywords (comma-separated)" },
+  "value": { "message": "Value to fill" },
+  "matchMode": { "message": "Match mode" },
+  "contains": { "message": "Contains" },
+  "exact": { "message": "Exact" },
+  "removeRule": { "message": "Remove field" },
+  "saveProfile": { "message": "Save profile" },
+  "preferences": { "message": "Make yourself comfortable" },
+  "preferencesHint": { "message": "These preferences apply to all profiles." },
+  "overwrite": { "message": "Replace values already entered in forms" },
+  "highlight": { "message": "Briefly highlight filled fields" },
+  "diagnostic": {
+    "message": "Show diagnostic reasons in the console (never values)"
+  },
+  "shortcutSettings": {
+    "message": "Shortcut: Alt + Shift + F. Change it in your browser's extension keyboard shortcut settings."
+  },
+  "backupHeading": { "message": "A backup, just in case" },
+  "backupIntro": {
+    "message": "Export your saved profiles or bring them to another device yourself."
+  },
+  "exportWarning": {
+    "message": "JSON backups are not encrypted and contain your personal details. Store them somewhere safe."
+  },
+  "export": { "message": "Export JSON" },
+  "import": { "message": "Import JSON" },
+  "importPreview": { "message": "Review your import" },
+  "importPreviewHint": {
+    "message": "The file is valid. Review the profiles before saving."
+  },
+  "replaceWarning": {
+    "message": "Merge adds copies with new IDs and keeps your preferences. Replace removes all existing profiles and uses the imported preferences."
+  },
+  "merge": { "message": "Merge profiles" },
+  "replace": { "message": "Replace all" },
+  "cancel": { "message": "Cancel" },
+  "profilePreview": { "message": "$1 · $2 standard fields · $3 custom fields" },
+  "copySuffix": { "message": "(copy)" },
+  "confirmDelete": { "message": "Delete profile “$1”? This cannot be undone." },
+  "discardChanges": { "message": "Discard your unsaved changes?" },
+  "unsaved": { "message": "Unsaved changes" },
+  "saved": { "message": "Saved on this device" },
+  "exported": { "message": "Backup exported" },
+  "imported": { "message": "Profiles imported" }
+}

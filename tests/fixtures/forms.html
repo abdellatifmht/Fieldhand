@@ -1,0 +1,160 @@
+﻿<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fieldhand test forms</title>
+    <style>
+      body {
+        font: 14px system-ui;
+        margin: 12px;
+      }
+      form {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 9px;
+      }
+      label {
+        display: grid;
+        gap: 3px;
+      }
+      input,
+      select,
+      textarea {
+        min-height: 26px;
+        max-width: 180px;
+      }
+      fieldset {
+        display: flex;
+        gap: 10px;
+      }
+      iframe {
+        width: 100%;
+        height: 65px;
+        margin-top: 8px;
+      }
+      .hidden {
+        display: none;
+      }
+      .transparent {
+        opacity: 0;
+      }
+      .offscreen {
+        position: absolute;
+        left: -9999px;
+      }
+      #shadow {
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="registration" onsubmit="return false;">
+      <label>Prénom<input id="first" autocomplete="given-name" /></label
+      ><label>Nom<input id="last" name="lastName" /></label
+      ><label>E-mail<input id="email" type="email" /></label
+      ><label>Téléphone<input id="phone" type="tel" /></label>
+      <label
+        >Date de naissance<input
+          id="birth"
+          type="date"
+          autocomplete="bday" /></label
+      ><label
+        >Adresse<textarea
+          id="address"
+          autocomplete="street-address"
+        ></textarea></label
+      ><label
+        >Complément d’adresse<input
+          id="address2"
+          autocomplete="address-line2" /></label
+      ><label
+        >Code postal<input id="postal" autocomplete="postal-code"
+      /></label>
+      <label
+        >Ville<input
+          id="city"
+          autocomplete="address-level2"
+          value="Already entered" /></label
+      ><label>Région<input id="region" autocomplete="address-level1" /></label
+      ><label
+        >Pays<select id="country" autocomplete="country">
+          <option value="">Choisir</option>
+          <option value="FR">France</option>
+          <option value="MA">Maroc</option>
+        </select></label
+      ><label
+        >Entreprise<input id="company" autocomplete="organization"
+      /></label>
+      <label>Poste<input id="job" autocomplete="organization-title" /></label
+      ><label>Site web<input id="web" type="url" autocomplete="url" /></label
+      ><label>LinkedIn<input id="linkedin" /></label
+      ><label>Référence dossier<input id="reference" /></label>
+      <fieldset>
+        <legend>Civilité</legend>
+        <label
+          >Monsieur<input
+            type="radio"
+            name="salutation"
+            value="mr"
+            id="mr" /></label
+        ><label
+          >Madame<input type="radio" name="salutation" value="ms" id="ms"
+        /></label>
+      </fieldset>
+      <label><input type="checkbox" id="terms" />I accept the terms</label
+      ><label>Password<input type="password" id="password" /></label
+      ><label>Card number<input id="card" autocomplete="cc-number" /></label
+      ><label>IBAN<input id="iban" /></label
+      ><label>Username<input id="username" autocomplete="username" /></label
+      ><label>Security code<input id="cvv" /></label
+      ><label
+        >One-time code<input id="otp" autocomplete="one-time-code"
+      /></label>
+      <div style="height: 0; overflow: hidden">
+        <label>Email<input type="email" id="clipped" /></label>
+      </div>
+      <div style="visibility: hidden">
+        <label>Email<input type="email" id="visibilityHidden" /></label>
+      </div>
+      <input
+        type="email"
+        id="zeroSize"
+        style="width: 0; height: 0; min-height: 0; padding: 0; border: 0"
+      />
+      <fieldset disabled>
+        <label>Email<input type="email" id="disabledFieldset" /></label>
+      </fieldset>
+      <div class="hidden">
+        <label>Email<input type="email" id="hidden" /></label>
+      </div>
+      <div class="transparent">
+        <label>Email<input type="email" id="transparent" /></label>
+      </div>
+      <label class="offscreen">Email<input type="email" id="offscreen" /></label
+      ><label>Email<input type="email" id="disabled" disabled /></label
+      ><label>Email<input type="email" id="readonly" readonly /></label
+      ><label>Email<input type="hidden" id="typehidden" /></label>
+      <span id="unassociatedLabel">Prénom</span
+      ><input id="ariaLabelled" aria-labelledby="unassociatedLabel" /><input
+        id="aria"
+        aria-label="Ville"
+      /><input
+        id="placeholder"
+        placeholder="JJ/MM/AAAA"
+        name="birthDate"
+      /><input id="unassociated" name="first_name" />
+    </form>
+    <div id="shadow"></div>
+    <iframe id="sameOrigin" src="/frame.html" title="Same origin frame"></iframe
+    ><iframe
+      id="crossOrigin"
+      src="https://other.test/frame.html"
+      title="Cross origin frame"
+    ></iframe>
+    <div id="react"></div>
+    <div id="vue"></div>
+    <fieldhand-angular></fieldhand-angular>
+    <script src="/frameworks.js"></script>
+    <script src="/fixture.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fieldhand</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="popup.css" />
+    <script src="popup.js" defer></script>
+  </head>
+  <body data-title="appName">
+    <header class="row spread">
+      <div class="brand"><img src="icons/32.png" alt="" />Fieldhand</div>
+      <span class="tag" data-i18n="localOnly"></span>
+    </header>
+    <main class="stack">
+      <section class="intro">
+        <p class="eyebrow" data-i18n="oneLessTask"></p>
+        <h1 data-i18n="popupHeading"></h1>
+        <p class="muted" data-i18n="popupIntro"></p>
+      </section>
+      <label
+        ><span data-i18n="useProfile"></span
+        ><select id="profile"></select
+      ></label>
+      <p id="empty" class="hint" hidden data-i18n="emptyProfile"></p>
+      <div id="insecure" class="warning" hidden>
+        <label class="check"
+          ><input type="checkbox" id="confirmHttp" /><span
+            data-i18n="confirmHttp"
+          ></span
+        ></label>
+      </div>
+      <button class="primary fill" id="fill" data-i18n="fillForm"></button>
+      <div class="result">
+        <span
+          id="status"
+          class="status"
+          role="status"
+          aria-live="polite"
+          data-i18n="ready"
+        ></span
+        ><button id="undo" disabled data-i18n="undo"></button>
+      </div>
+      <p id="frames" class="hint" hidden data-i18n="framesSkipped"></p>
+      <p class="shortcut">
+        <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd
+        ><span data-i18n="keyboardHint"></span>
+      </p>
+    </main>
+    <footer class="row spread">
+      <span data-i18n="staysLocal"></span
+      ><button id="options" data-i18n="manageProfiles"></button>
+    </footer>
+  </body>
+</html>

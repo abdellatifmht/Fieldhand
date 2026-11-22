@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fieldhand</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="options.css" />
+    <script src="options.js" defer></script>
+  </head>
+  <body data-title="optionsTitle">
+    <header>
+      <div class="topbar row spread">
+        <div class="brand">
+          <img src="icons/32.png" alt="" />Fieldhand
+          <span class="tag" data-i18n="localOnly"></span>
+        </div>
+        <span class="muted" data-i18n="yourDetailsYourDevice"></span>
+      </div>
+    </header>
+    <main>
+      <div class="page-heading">
+        <p class="eyebrow" data-i18n="workspace"></p>
+        <h1 data-i18n="optionsHeading"></h1>
+        <p class="muted" data-i18n="optionsIntro"></p>
+      </div>
+      <div class="layout">
+        <aside class="stack">
+          <section class="card">
+            <h2 data-i18n="profiles"></h2>
+            <nav id="profiles" data-i18n-label="profiles"></nav>
+            <button id="newProfile" class="add" data-i18n="newProfile"></button>
+          </section>
+          <div class="privacy">
+            <span class="privacy-mark" aria-hidden="true">◈</span>
+            <h3 data-i18n="privateByDesign"></h3>
+            <p class="hint" data-i18n="privacyNote"></p>
+          </div>
+        </aside>
+        <div class="stack">
+          <form id="editor" class="card">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="profileDetails"></p>
+                <h2 id="profileTitle"></h2>
+              </div>
+              <span
+                id="defaultTag"
+                class="tag"
+                data-i18n="defaultProfile"
+              ></span>
+            </div>
+            <div class="field-grid">
+              <label
+                ><span data-i18n="profileName"></span
+                ><input id="profileName" maxlength="100" required /></label
+              ><label
+                ><span data-i18n="domains"></span
+                ><input id="domains" maxlength="2000" spellcheck="false" /><span
+                  class="hint"
+                  data-i18n="domainsHint"
+                ></span
+              ></label>
+            </div>
+            <div class="actions profile-actions">
+              <button
+                type="button"
+                id="makeDefault"
+                data-i18n="makeDefault"
+              ></button
+              ><button
+                type="button"
+                id="duplicate"
+                data-i18n="duplicate"
+              ></button
+              ><button
+                type="button"
+                id="delete"
+                class="danger"
+                data-i18n="deleteProfile"
+              ></button>
+            </div>
+            <hr />
+            <h3 class="subheading" data-i18n="personalDetails"></h3>
+            <div id="personalFields" class="field-grid"></div>
+            <h3 class="subheading" data-i18n="addressDetails"></h3>
+            <div id="addressFields" class="field-grid"></div>
+            <h3 class="subheading" data-i18n="workDetails"></h3>
+            <div id="workFields" class="field-grid"></div>
+            <div class="section-head custom-head">
+              <div>
+                <h3 data-i18n="customRules"></h3>
+                <p class="hint" data-i18n="customRulesHint"></p>
+              </div>
+              <button type="button" id="addRule" data-i18n="addRule"></button>
+            </div>
+            <div id="rules"></div>
+            <div class="savebar">
+              <span
+                id="saveStatus"
+                role="status"
+                aria-live="polite"
+                class="status"
+              ></span
+              ><button
+                class="primary"
+                type="submit"
+                data-i18n="saveProfile"
+              ></button>
+            </div>
+          </form>
+          <section class="card stack">
+            <div>
+              <h2 data-i18n="preferences"></h2>
+              <p class="hint" data-i18n="preferencesHint"></p>
+            </div>
+            <label class="check"
+              ><input type="checkbox" id="overwrite" /><span
+                data-i18n="overwrite"
+              ></span></label
+            ><label class="check"
+              ><input type="checkbox" id="highlight" /><span
+                data-i18n="highlight"
+              ></span></label
+            ><label class="check"
+              ><input type="checkbox" id="diagnostic" /><span
+                data-i18n="diagnostic"
+              ></span
+            ></label>
+            <p class="hint" data-i18n="shortcutSettings"></p>
+            <p
+              id="settingsStatus"
+              class="status"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </section>
+          <section class="card stack">
+            <div>
+              <h2 data-i18n="backupHeading"></h2>
+              <p class="hint" data-i18n="backupIntro"></p>
+            </div>
+            <p class="warning" data-i18n="exportWarning"></p>
+            <div class="actions">
+              <button id="export" data-i18n="export"></button
+              ><button id="import" data-i18n="import"></button
+              ><input
+                id="importFile"
+                type="file"
+                accept="application/json,.json"
+                hidden
+              />
+            </div>
+            <p
+              id="transferStatus"
+              class="status"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </section>
+        </div>
+      </div>
+      <footer>
+        <span>Fieldhand · 1.0.0</span><span data-i18n="staysLocal"></span>
+      </footer>
+    </main>
+    <dialog id="importDialog" aria-labelledby="importTitle">
+      <h2 id="importTitle" data-i18n="importPreview"></h2>
+      <p class="muted" data-i18n="importPreviewHint"></p>
+      <ul id="importSummary"></ul>
+      <p class="warning" data-i18n="replaceWarning"></p>
+      <div class="actions">
+        <button id="merge" class="primary" data-i18n="merge"></button
+        ><button id="replace" class="danger" data-i18n="replace"></button
+        ><button id="cancelImport" data-i18n="cancel"></button>
+      </div>
+    </dialog>
+  </body>
+</html>

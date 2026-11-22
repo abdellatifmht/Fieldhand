@@ -1,0 +1,83 @@
+body {
+  width: 370px;
+  height: 510px;
+  display: flex;
+  flex-direction: column;
+}
+header,
+footer {
+  flex-shrink: 0;
+}
+header {
+  padding: 16px 22px;
+  border-bottom: 1px solid var(--line);
+}
+main {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  align-content: start;
+  gap: 12px !important;
+  padding: 20px 24px;
+}
+.intro h1 {
+  margin: 7px 0;
+  font-size: 27px;
+}
+.intro .muted,
+.insecure-page .intro,
+.insecure-page .shortcut {
+  display: none;
+}
+.intro p.muted {
+  font-size: 13px;
+}
+.fill {
+  padding: 14px;
+  font-size: 15px;
+}
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 40px;
+}
+.result button {
+  font-size: 12px;
+  padding: 7px 10px;
+}
+.status {
+  font-size: 13px;
+}
+.shortcut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.shortcut span {
+  margin-left: 6px;
+}
+kbd {
+  border: 1px solid var(--line);
+  border-bottom-width: 2px;
+  background: var(--panel);
+  border-radius: 4px;
+  padding: 3px 5px;
+  font: 11px system-ui;
+}
+footer {
+  padding: 15px 20px;
+  border-top: 1px solid var(--line);
+  background: var(--panel);
+}
+footer button {
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  padding: 4px;
+  font-size: 12px;
+}

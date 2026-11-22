@@ -1,0 +1,154 @@
+{
+  "appName": { "message": "Fieldhand" },
+  "extensionDescription": {
+    "message": "Remplissez les formulaires avec vos profils. En local, en privé et toujours à votre demande."
+  },
+  "fillCommand": { "message": "Remplir le formulaire avec Fieldhand" },
+  "localOnly": { "message": "100 % local" },
+  "oneLessTask": { "message": "Un geste répétitif en moins" },
+  "popupHeading": { "message": "Vos coordonnées. Un clic." },
+  "popupIntro": {
+    "message": "Remplissez le formulaire avec un profil enregistré. Vous gardez le contrôle."
+  },
+  "useProfile": { "message": "Utiliser le profil" },
+  "emptyProfile": {
+    "message": "Ce profil est vide. Ajoutez vos coordonnées dans Gérer les profils."
+  },
+  "confirmHttp": {
+    "message": "Cette page utilise HTTP. Je comprends que mes coordonnées peuvent transiter sans chiffrement."
+  },
+  "fillForm": { "message": "Remplir ce formulaire" },
+  "undo": { "message": "Annuler" },
+  "ready": { "message": "Prêt à votre demande" },
+  "framesSkipped": {
+    "message": "Certains formulaires intégrés sont inaccessibles. Remplissez-les manuellement."
+  },
+  "keyboardHint": { "message": "pour aller plus vite" },
+  "staysLocal": { "message": "Vos données restent sur cet appareil." },
+  "manageProfiles": { "message": "Gérer les profils →" },
+  "filledCount": { "message": "$1 champs remplis" },
+  "restoredCount": { "message": "$1 contrôles restaurés" },
+  "unsupportedPage": {
+    "message": "Ouvrez un site web classique. Les pages du navigateur et des boutiques sont protégées."
+  },
+  "insecurePage": {
+    "message": "Confirmez l’avertissement HTTP avant le remplissage."
+  },
+  "operationFailed": {
+    "message": "Action impossible. Vérifiez l’accès à la page, rechargez-la et réessayez."
+  },
+  "invalidSchema": {
+    "message": "Profil invalide. Vérifiez les noms, dates, domaines et limites (100 profils / 100 règles)."
+  },
+  "fileTooLarge": { "message": "Choisissez un fichier JSON de moins de 2 Mo." },
+  "lastProfile": { "message": "Conservez au moins un profil." },
+  "optionsTitle": { "message": "Profils et préférences · Fieldhand" },
+  "yourDetailsYourDevice": {
+    "message": "Vos coordonnées. Votre appareil. Votre choix."
+  },
+  "workspace": { "message": "Votre espace personnel" },
+  "optionsHeading": {
+    "message": "Un peu de préparation. Beaucoup moins de saisie."
+  },
+  "optionsIntro": {
+    "message": "Un profil pour chaque facette de votre vie. Choisissez-le au moment voulu."
+  },
+  "profiles": { "message": "Vos profils" },
+  "newProfile": { "message": "+ Nouveau profil" },
+  "newProfileName": { "message": "Nouveau profil" },
+  "personalProfile": { "message": "Personnel" },
+  "privateByDesign": { "message": "Privé par conception" },
+  "privacyNote": {
+    "message": "Les profils sont enregistrés localement, sans chiffrement. N’y stockez jamais de mots de passe, coordonnées bancaires ou secrets. Le remplissage communique les données choisies au site, qui peut les transmettre à ses serveurs."
+  },
+  "profileDetails": { "message": "À votre image" },
+  "defaultProfile": { "message": "Par défaut" },
+  "profileName": { "message": "Nom du profil" },
+  "domains": { "message": "Sites préférés" },
+  "domainsHint": {
+    "message": "Domaines facultatifs, séparés par des virgules. Exemple : linkedin.com"
+  },
+  "makeDefault": { "message": "Définir par défaut" },
+  "duplicate": { "message": "Dupliquer" },
+  "deleteProfile": { "message": "Supprimer" },
+  "personalDetails": { "message": "Informations personnelles" },
+  "addressDetails": { "message": "Adresse" },
+  "workDetails": { "message": "Vie professionnelle et en ligne" },
+  "honorific": { "message": "Civilité" },
+  "firstName": { "message": "Prénom" },
+  "lastName": { "message": "Nom" },
+  "birthDate": { "message": "Date de naissance" },
+  "email": { "message": "Adresse e-mail" },
+  "phone": { "message": "Téléphone" },
+  "address1": { "message": "Adresse ligne 1" },
+  "address2": { "message": "Adresse ligne 2" },
+  "postalCode": { "message": "Code postal" },
+  "city": { "message": "Ville" },
+  "region": { "message": "Région / département" },
+  "country": { "message": "Pays (nom ou code ISO)" },
+  "company": { "message": "Entreprise" },
+  "jobTitle": { "message": "Poste" },
+  "website": { "message": "Site web" },
+  "linkedin": { "message": "LinkedIn" },
+  "customRules": { "message": "Champs personnalisés" },
+  "customRulesHint": {
+    "message": "Vos règles sont prioritaires. Les champs sensibles restent exclus."
+  },
+  "addRule": { "message": "+ Ajouter un champ" },
+  "keywords": { "message": "Mots-clés (séparés par des virgules)" },
+  "value": { "message": "Valeur à remplir" },
+  "matchMode": { "message": "Correspondance" },
+  "contains": { "message": "Contient" },
+  "exact": { "message": "Exacte" },
+  "removeRule": { "message": "Retirer le champ" },
+  "saveProfile": { "message": "Enregistrer le profil" },
+  "preferences": { "message": "À votre convenance" },
+  "preferencesHint": {
+    "message": "Ces préférences s’appliquent à tous les profils."
+  },
+  "overwrite": {
+    "message": "Remplacer les valeurs déjà saisies dans les formulaires"
+  },
+  "highlight": {
+    "message": "Mettre brièvement les champs remplis en surbrillance"
+  },
+  "diagnostic": {
+    "message": "Afficher les raisons dans la console (jamais les valeurs)"
+  },
+  "shortcutSettings": {
+    "message": "Raccourci : Alt + Maj + F. Modifiez-le dans les paramètres des raccourcis d’extensions du navigateur."
+  },
+  "backupHeading": { "message": "Une sauvegarde, au cas où" },
+  "backupIntro": {
+    "message": "Exportez vos profils enregistrés ou transférez-les vous-même vers un autre appareil."
+  },
+  "exportWarning": {
+    "message": "Les sauvegardes JSON ne sont pas chiffrées et contiennent vos coordonnées. Conservez-les en lieu sûr."
+  },
+  "export": { "message": "Exporter en JSON" },
+  "import": { "message": "Importer un JSON" },
+  "importPreview": { "message": "Vérifier l’importation" },
+  "importPreviewHint": {
+    "message": "Le fichier est valide. Vérifiez les profils avant l’enregistrement."
+  },
+  "replaceWarning": {
+    "message": "Fusionner ajoute des copies et conserve vos préférences. Remplacer supprime tous les profils existants et utilise les préférences importées."
+  },
+  "merge": { "message": "Fusionner les profils" },
+  "replace": { "message": "Tout remplacer" },
+  "cancel": { "message": "Annuler" },
+  "profilePreview": {
+    "message": "$1 · $2 champs standards · $3 champs personnalisés"
+  },
+  "copySuffix": { "message": "(copie)" },
+  "confirmDelete": {
+    "message": "Supprimer le profil « $1 » ? Cette action est irréversible."
+  },
+  "discardChanges": {
+    "message": "Abandonner les modifications non enregistrées ?"
+  },
+  "unsaved": { "message": "Modifications non enregistrées" },
+  "saved": { "message": "Enregistré sur cet appareil" },
+  "exported": { "message": "Sauvegarde exportée" },
+  "imported": { "message": "Profils importés" }
+}
